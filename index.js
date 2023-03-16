@@ -1,5 +1,3 @@
-import escapeHtml from './src/utils/escape-html.js';
-
 const URL = 'https://api.github.com/search/repositories?';
 
 export default class SearchSection {
