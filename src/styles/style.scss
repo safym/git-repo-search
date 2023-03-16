@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,600&display=swap&subset=cyrillic-ext);
+
+//----variables----------------------------------------------------------//
+
+$height-ui: 50px;
+$transition: all ease-in-out 0.2s;
+
+$input-shadow: var(--primary-grey-color) 0px 0px 0px 1px;
+$button-shadow: 0 1px 2px rgba(70, 131, 217, .48),
+inset 0 -1px 0 rgba(0, 0, 0, .12);
+
+$shadow-focus: 0 0 0 3px rgba(70, 131, 217, .12);
+$input-shadow-focus: 0 0 0 2px rgba(70, 131, 217, .12);
+
+$primary-font-weight: 400;
+$secondary-font-weight: 600;
+
+$border-radius: 6px;
+
+$font-size-s: 16px;
+$font-size-m: 18px;
+$font-size-l: 28px;
+
+$offset: 10px;
+
+:root {
+  --message-color: #f0363660;
+
+  --text-color-grey: #828282;
+  --text-main-color: #000000;
+  --element-color: #ffffff;
+
+  --bg-body-color: #0d1117;
+  --bg-secondary-color: #121820;
+
+  --primary-grey-color: #30363d;
+
+  --shadow-color: #010409;
+
+  --button-main-color: #00ff800b;
+  --button-hover-color: #00ff801e;
+  --button-disabled-color: #ff000011;
+  --button-main-border-color: #00ff802d;
+  --button-hover-border-color: #00ff804a;
+  --button-disabled-border-color: #ff000031;
+
+  --light-text-color: #ffffff;
+  --link-color: #58a6ff;
+}
+
+//----main----------------------------------------------------------//
+
+#root {
+  box-sizing: content-box;
+  max-width: 1000px;
+  padding: 3 * $offset;
+  margin: (2 * $offset) auto;
+  border-radius: $border-radius;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-size: $font-size-s;
+  font-weight: $primary-font-weight;
+  line-height: 28px;
+
+  color: var(--text-main-color);
+  background-color: var(--bg-body-color);
+}
+
+//----comments----------------------------------------------------------//
+
+.search {
+  display: flex;
+  flex-direction: column;
+
+  &__result-wrapper {
+
+  }
+}
+
+//----header----------------------------------------------------------//
+
+.header {
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-l;
+  margin-bottom: 2 * $offset;
+}
+
+//----loader----------------------------------------------------------//
+
+.loading {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  border: 5px dotted #006eff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+//----form----------------------------------------------------------//
+
+.form {
+  padding: 1.5 * $offset;
+  display: flex;
+  flex-direction: row;
+  transition: $transition;
+  background-color: #141920;
+  font-size: $font-size-m;
+  color: var(--primary-grey-color);
+
+  border-radius: $border-radius;
+  border: 1px solid var(--primary-grey-color);
+  box-shadow: 0 3px 6px var(--shadow-color) ;
+
+  &__search-field {
+    width: 100%;
+    
+  }
+}
+
+//----form-field----------------------------------------------------------//
+
+.form-field {
+  position: relative;
+
+  &__field {
+    width: 100%;
+    height: $height-ui;
+    padding: $offset;
+    box-shadow: $input-shadow;
+    transition: $transition;
+    border-radius: $border-radius;
+
+    &:focus {
+      background-color: var(--bg-secondary-color);
+      color: var(--element-color);
+      box-shadow: $input-shadow-focus;
+    }
+  }
+
+  &__message {
+    display:block;
+    height: 30px;
+    color: var(--message-color);
+  }
+
+  &__button-submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: $border-radius;
+  }
+}
+
+//----button----------------------------------------------------------//
+
+.button {
+  height: $height-ui;
+  max-width: $height-ui;
+  min-width: $height-ui;
+  padding: $offset;
+
+  font-weight: $secondary-font-weight;
+
+  color: var(--text-main-color);
+  border: 1px solid var(--button-hover-border-color);
+  background: var(--button-main-color);
+  transition: $transition;
+
+  & svg {
+    fill: #ffffff42;
+  }
+
+  &:disabled {
+    cursor: auto;
+    background-color: var(--button-disabled-color);
+    border: 1px solid var(--button-disabled-border-color);
+  }
+
+  &:not(:disabled):hover {
+    background: var(--button-hover-color);
+  }
+}
+
+//----result----------------------------------------------------------//
+
+.result-wrapper__result-item {
+}
+.result-item {
+  padding: 1.5 * $offset;
+  border: 1px solid var(--primary-grey-color);
+  box-shadow: 0 3px 6px var(--shadow-color) ;
+  border-radius: $border-radius;
+  font-size: $font-size-m;
+  color: var(--light-text-color);
+  // background-color: var(--bg-secondary-color);
+  &:not(:last-child) {
+    margin: $offset 0;
+  }
+  &__title-wrapper {
+    display: flex;
+    // border-bottom: 1px solid var(--primary-grey-color);
+  }
+  &__name {
+    font-size: $font-size-l;
+    color: var(--link-color);
+  }
+  &__date {
+  }
+  &__description {
+  }
+  &__count-wrapper {
+    display: flex;
+  }
+  &__stars {
+  }
+  &__borderline {
+  }
+  &__forks {
+  }
+}
+.borderline {
+}
+
+//----media----------------------------------------------------------//
+
+//--desktop screen section (column section to row) 
+@media only screen and (max-width: 950px) {
+ 
+}

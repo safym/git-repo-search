@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Comments</title>
+
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="./src/styles/normalize.css">
+
+</head>
+
+<body>
+
+  <div id="root">
+    <div class="result-wrapper__result-item result-item">
+      <div class="result-item__title-wrapper">
+          <a class="result-item__name" href=${data.html_url}>💾${data.full_name}</a>
+          <p class="result-item__date">Updated ${this.formatDate(data.updated_at)}</p>
+      </div>
+      <p class="result-item__description">${(data.description) ? data.description : ''}</p>
+      <div class="result-item__count-wrapper">
+        <div class="result-item__stars">
+          <span>⭐</span> ${data.stargazers_count}
+        </div>
+        <div class="result-item__borderline borderline"></div>
+        <div class="result-item__forks">
+          <span>📝</span> ${data.forks_count}
+        </div>
+      </div>
+    </div>
+
+      <!-- CommentsSection will be rendered here -->
+  </div>
+
+  <script type="module">
+    import SearchSection from './index.js';
+
+    const search = new SearchSection();
+
+    root.append(search.element);
+  </script>
+</body>
+
+</html>
