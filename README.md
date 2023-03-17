@@ -12,11 +12,9 @@ Live link: [Github search repo page](https://safym.github.io/git-repo-search/)
 ## 🖥️ Screenshots
 
 <p align="center">
+    <img height="400px" src="https://user-images.githubusercontent.com/99616798/225789642-c992c1a7-6c92-4abd-9b63-96d194951216.png" />
     <img height="200px" src="https://user-images.githubusercontent.com/99616798/225789656-6c6a857d-4bc5-4dad-ac40-837eed007d2b.png" />
     <img height="200px" src="https://user-images.githubusercontent.com/99616798/225789649-da5f0e79-d0c8-44fd-89f2-7489c2369cea.png" />
-</p>
-<p align="center">
-    <img height="400px" src="https://user-images.githubusercontent.com/99616798/225789642-c992c1a7-6c92-4abd-9b63-96d194951216.png" />
 </p>
 
 ## 📑 Implementation:
