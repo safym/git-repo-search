@@ -1,5 +1,4 @@
 <h1 align="center">📂 Web app for searching Github repositories</h1>
-<p align="center">(HTML, CSS, JS)</p>
 
 <p align="center">
     <img height="100px" alt="HTML, CSS, JS" src="https://user-images.githubusercontent.com/99616798/225798818-8fdb9041-e98d-427a-bd68-c56ba7babdc6.png" />
@@ -54,8 +53,6 @@ For more information, see the [API documentation](https://docs.github.com/ru/res
 
 
 <h1 align="center">📂 Веб приложение для поиска Github репозиториев</h1>
-<p align="center">(HTML, CSS, JS)</p>
-
 
 Для поиска используется [Github API](https://docs.github.com/en/rest?apiVersion=2022-11-28)
 
