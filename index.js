@@ -12,7 +12,7 @@ export default class SearchSection {
   formIsValid;
 
   fetchData = async (value) => {
-    const query =  `q=${value}+in:name`;
+    const query =  `q=${value} in:name`;
 
     this.url = new URL(REPO_SEARCH_PATH + query, BASE_API_URL)
     this.url.searchParams.set('per_page', RESULT_COUNT)
