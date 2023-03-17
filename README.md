@@ -24,7 +24,7 @@ Live link: [Github search repo page](https://safym.github.io/git-repo-search/)
     <img height="200px" src="https://user-images.githubusercontent.com/99616798/225789649-da5f0e79-d0c8-44fd-89f2-7489c2369cea.png" />
 </p>
 
-## 📑 Implementation:
+## 📑 Implementation [EN]:
 
 The search page is logically an instance of the *SearchSection* class.
 
@@ -45,20 +45,13 @@ Features of behavior:
 * There is a message about an **empty search result**
 
 
-## 🔒 API limit
+## 🔒 API limit [EN]
 
 > For unauthenticated requests, the rate limit allows for up to 60 requests per hour. Unauthenticated requests are associated with the originating IP address, and not the user making requests.
 
 For more information, see the [API documentation](https://docs.github.com/ru/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28).
 
-
-<h1 align="center">📂 Веб приложение для поиска Github репозиториев</h1>
-
-Для поиска используется [Github API](https://docs.github.com/en/rest?apiVersion=2022-11-28)
-
-Style reference - [dark theme of Github](https://github.com/)
-
-## 📑 Реализация:
+## 📑 Реализация [RU]:
 
 Страница поиска логически - экземпляр класса *SearchSection*.
 
@@ -78,7 +71,7 @@ Style reference - [dark theme of Github](https://github.com/)
 * Присутсвует **loader-элемент**, пока выполняется запрос
 * Присуствует сообщение о **пустом результате** поиска
     
-## 🔒 Ограничение API
+## 🔒 Ограничение API [RU]
 
 > Для запросов, не прошедших проверку подлинности, ограничение скорости допускает до 60 запросов в час. Неаутентифицированные запросы связаны с исходным IP-адресом, а не с пользователем, отправляющим запросы.
 
