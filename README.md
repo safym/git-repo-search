@@ -1,8 +1,11 @@
 <h1 align="center">📂 Web app for searching Github repositories</h1>
 
 <p align="center">
-    <img height="100px" alt="HTML, CSS, JS" src="https://user-images.githubusercontent.com/99616798/225798818-8fdb9041-e98d-427a-bd68-c56ba7babdc6.png" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,scss,js" />
+  </a>
 </p>
+
 
 <p align="center">
    <span>The search takes place using the <a href="https://docs.github.com/en/rest?apiVersion=2022-11-28)">Github API</span>
