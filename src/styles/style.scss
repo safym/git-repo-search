@@ -97,7 +97,18 @@ body {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  animation: rotation 2s linear infinite;
+  -webkit-animation: rotation 2s linear infinite;
+          animation: rotation 2s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rotation {
@@ -277,7 +288,8 @@ body {
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
-  column-gap: 0.7 * $offset;
+  -moz-column-gap: 0.7 * $offset;
+       column-gap: 0.7 * $offset;
 
   border-radius: $border-radius;
 
