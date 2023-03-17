@@ -1,9 +1,17 @@
 <h1 align="center">📂 Web app for searching Github repositories</h1>
 <p align="center">(HTML, CSS, JS)</p>
 
-The search takes place using the [Github API](https://docs.github.com/en/rest?apiVersion=2022-11-28)
+<p align="center">
+    <img height="100px" alt="HTML, CSS, JS" src="https://user-images.githubusercontent.com/99616798/225798818-8fdb9041-e98d-427a-bd68-c56ba7babdc6.png" />
+</p>
 
-Style reference - [dark theme of Github](https://github.com/)
+<p align="center">
+   <span>The search takes place using the <a href="https://docs.github.com/en/rest?apiVersion=2022-11-28)">Github API</span>
+</p>
+
+<p align="center">
+   Style reference <a href="https://github.com/">dark theme of Github</a>
+</p>
 
 ## 🔗 Github Pages
 
